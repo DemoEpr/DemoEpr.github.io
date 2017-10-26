@@ -1,0 +1,38 @@
+<!-- First Name: <input type="text" ng-model="ctrl_login.usuario.firstName"><br>
+    Last Name: <input type="text" ng-model="ctrl_login.usuario.lastName"><br>
+    <br>
+    Full Name: {{ ctrl_login.usuario.firstName + " " + ctrl_login.usuario.lastName }} --><div class="container-fluid"><div class="row"><div class="col-md-2"></div><div class="col-md-7" style="padding-top:12px">Powered by <a href="http://www.mathdecision.com/">MathDecision</a></div><div class="col-md-2" style="padding-top:12px"><div class="dropdown"><button class="btn btn-default dropdown-toggle" type="button" id="dropdownTechSup" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Soporte Técnico</button><ul class="dropdown-menu" aria-labelledby="dropdownTechSup"><li><a href="tel:00-57-4-4444444">Medellín: 444-44-44</a></li><li><a href="tel:00-57-1-5555555">Bogotá: 555-55-55</a></li><li><a href="tel:00-57-1-6666666">Cali: 666-66-66</a></li><li><a href="mailto:support@mathdecision.zendesk.com" style="background-color: #f5e79e">Enviar correo electrónico</a></li></ul></div></div><!--<div class="col-md-1">
+
+      <div id="SkypeButton_Call_math.decision.colombia_1">
+        <script type="text/javascript">
+        Skype.ui({
+          "name": "call",
+          "element": "SkypeButton_Call_math.decision.colombia_1",
+          "participants": ["math.decision.colombia"]
+        });
+        </script>
+      </div>
+    </div>
+
+    <div class="col-md-1">
+      <div id="SkypeButton_Chat_math.decision.colombia_1">
+        <script type="text/javascript">
+        Skype.ui({
+          "name": "chat",
+          "element": "SkypeButton_Chat_math.decision.colombia_1",
+          "participants": ["math.decision.colombia"]
+        });
+        </script>
+      </div>
+    </div>--><!--<div class="col-md-2">
+        <a href="llamar_a_zendesk"><span class="glyphicon glyphicon-phone-alt"></span></a>
+    </div>--></div><div class="row"><div class="col-md-12" style="padding:50px; padding-left:100px; padding-bottom:0px" align="middle"><div class="sqlogin"><!--<h2><b>EPR Sector Solidario</b></h2>--> <img src="/public/logo_4.png" alt="SARL image" class="img-responsive img-rounded imglogin"><h6 class="alert alert-info" style="margin-top: 0; margin-bottom: 0; margin-right: 50px;margin-left: 50px">Este aplicativo cumple con lo establecido en la circular externa N°14 del 30 de Diciembre de 2015 emitida por la Supersolidaria</h6><form id="formlog" name="signInForm"><fieldset class="fslogin" form="formlog"><div class="input-group" style="white-space: nowrap"><span class="input-group-addon"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></span> <input id="user_input" type="text" class="form-control" placeholder="Nombre de Usuario o email" ng-model="ctrl_login.user.username" required></div><br><div class="input-group" style="white-space: nowrap"><span class="input-group-addon"><span class="glyphicon glyphicon-lock" aria-hidden="true"></span></span> <input id="pass_input" type="password" class="form-control" placeholder="Contraseña" ng-model="ctrl_login.user.password" required></div><div class="pull-right"><!--<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">Open Modal3</button>--> <a data-toggle="modal" data-target="#modal_restore_account" href="">Olvidaste tu contraseña?</a></div><br><br><br><button id="bot_ingr" class="btn btn-primary btn-block" ng-click="ctrl_login.ingreso()" ng-disabled="signInForm.$invalid">INGRESAR</button><div id="alert_bad_login" class="alert alert-danger" ng-show="ctrl_login.get_errors()"><!--<strong>Peligro!</strong> has alcanzado 2 ingresos erroneos--> {{ ctrl_login.get_error_message() }}</div></fieldset></form><!-- Modal de recuperar constraseña --><div class="modal fade" id="modal_restore_account" role="dialog"><div class="modal-dialog modal-lg"><!-- Modal content--><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal">&times;</button><h4 class="modal-title">Recuperar Contraseña</h4></div><p>Ingrese el correo electrónico vinculado a la cuenta</p><form class="modal-body" name="form_pass_reset"><input type="email" ng-model="ctrl_login.user.email" placeholder="email@example.com" required><br><br><div class="alert alert-success" ng-show="ctrl_login.show_email_pass"><strong>Correcto !</strong> Se ha enviado un mensaje a su email con el procedimiento para resetear el password y un SMS a su celular con el código de activación.</div><div class="alert alert-danger" ng-show="ctrl_login.show_email_fail"><strong>Error !</strong> El correo ingresado no esta vinculado con ninguna de nuestras cuentas.</div><div class="modal-footer"><button type="button" class="btn btn-primary" ng-click="ctrl_login.verify_email()" ng-disabled="form_pass_reset.$invalid" ng-hide="ctrl_login.hide_send_email_button">Enviar</button></div></form></div></div></div></div></div><!-- <div class="col-md-6" align="middle" class="embed-responsive embed-responsibe-16by9">
+
+      <br><br><br><br>
+
+      <iframe src="https://www.youtube.com/embed/ngfA4mGPON4" frameborder="0" allowfullscreen class="embed-responsive-item videologin"></iframe>
+
+      <br><br><br>
+
+      <div class="pull-right"><a href="sarl_plus_URL">Buscas SARL+?</a></div>
+    </div> --></div><br><div class="row"><!-- <div class="col-md-5"></div> --><div class="col-md-12 text-center" style="padding-left:75px"><a href="sarl_plus_URL"><strong>Buscas epr+?</strong><br><img src="/public/logosarl+2.png" alt="logo sarl+" height="100px" width="100px"></a><br><br></div><!-- <div class="col-md-3"></div> --></div></div>

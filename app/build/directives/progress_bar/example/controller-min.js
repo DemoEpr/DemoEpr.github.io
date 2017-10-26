@@ -1,0 +1,1 @@
+angular.module("myApp",["utilities"]).controller("myController",function(){var t=this;t.change_data=function(){t.completed=70,t.state="Nada"},t.completed=30,t.state="Completo"});

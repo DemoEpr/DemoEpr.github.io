@@ -1,0 +1,1 @@
+"use strict";describe("sarl.dashboard module",function(){beforeEach(module("sarl.dashboard")),describe("view1 controller",function(){it("should ....",inject(function(e){var o=e("DashboardCtrl");expect(o).toBeDefined()}))})});
